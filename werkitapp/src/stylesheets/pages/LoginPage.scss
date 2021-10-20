@@ -1,0 +1,78 @@
+@import '../_colors.scss';
+@import '../_fonts.scss';
+
+.header-login {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.header-title {
+    color: $polished-pine;
+    font-size: 4rem;
+    margin-left: 3px;
+}
+
+.button-login {
+    padding: 8px;
+    border-radius: 15px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    border: solid 1px $polished-pine;
+    p {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+}
+
+.button-login:hover {
+    background-color: $sky-blue-crayola;
+    padding: 12px;
+}
+
+.welcome-details{
+    margin: 16px;
+    // text-align: center;
+}
+
+.welcome-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.welcome-details p{
+    font-family: $fredoka;
+    font-weight: bold;
+    
+}
+
+.button-signup {
+    background-color: $violet-blue;
+    border: none;
+    color: $honeydew;
+    margin: auto;
+    margin-top: 94px;
+}
+.form-wrapper{
+    width: 50vh;
+}
+
+.form-wrapper-body{
+    width: 100%;
+}
+
+.form-section {
+    display: flex;
+    padding: 18px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    width: 88%;
+    border: 2px solid lightgray;
+    background-color: lightgray;
+    border-radius: 15px;
+}
