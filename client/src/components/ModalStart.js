@@ -14,9 +14,9 @@ const ModalStart = ({show, username, close}) => {
             <i className="close-img fas fa-times-circle"></i>
             </button>
           </header>
-          <main className="modal_content">
+          <section className="modal_content">
           Since you're new here, let's start by adding in your overall goals
-          </main>
+          </section>
           <footer className="modal_footer">
             <Link to="/goals" className="btn-submit">
               Continue

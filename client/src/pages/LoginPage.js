@@ -11,7 +11,7 @@ const LoginPage = ({cloudName}) => {
   // const passwordConfirmRef = useRef();
 
   return (
-    <main>
+    <main style={{height: '100vh'}}>
       <header className="header-login">
       <Image 
             className="logo-large"

@@ -7,20 +7,28 @@ export const Footer = () => {
     <div>
       <ul className="footer_list">
         <NavLink to="/today" className="footer_list-elem">
-          <i className="footer_list-elem-icon fas fa-calendar-day"></i>
-          <h4>Today</h4>
+          <div className="footer_list-elem-details">
+            <i className="footer_list-elem-icon fas fa-calendar-day"></i>
+            <p>Today</p>
+          </div>
         </NavLink>
         <NavLink to="/trends" className="footer_list-elem">
-          <i className="footer_list-elem-icon fas fa-poll"></i>
-          <h4>Trends & History</h4>
+          <div className="footer_list-elem-details">
+            <i className="footer_list-elem-icon fas fa-poll"></i>
+            <p>Trends</p>
+          </div>
         </NavLink>
         <NavLink to="/goals" className="footer_list-elem">
-          <i className="footer_list-elem-icon fas fa-bullseye"></i>
-          <h4>Goals</h4>
+          <div className="footer_list-elem-details">
+            <i className="footer_list-elem-icon fas fa-bullseye"></i>
+            <p>Goals</p>
+          </div>
         </NavLink>
         <NavLink to="/settings" className="footer_list-elem">
-          <i className="footer_list-elem-icon fas fa-cog"></i>
-          <h4>Settings</h4>
+          <div className="footer_list-elem-details">
+            <i className="footer_list-elem-icon fas fa-cog"></i>
+            <p>Settings</p>
+          </div>
         </NavLink>
       </ul>
     </div>
