@@ -1,20 +1,23 @@
 import React from 'react';
 import {Image, Transformation} from 'cloudinary-react';
 import '../stylesheets/pages/GoalsPage.scss';
+import Footer from '../components/Footer';
 
 const GoalsPage = ({cloudName}) => {
-  const goalsDiv = title => (
+  const goalsDiv = (title, per) => (
     <div className="container_forms-elem">
-    <h2 className="container_forms-elem-title">{title}</h2>
-    <button className="container_forms-elem-btn">
-      <i className="fas fa-pen"></i>
-    </button>
-    <div className="container_forms-elem-details">5 per week</div>
+      <h2 className="container_forms-elem-title">{title}</h2>
+      <button className="container_forms-elem-btn">
+        <i className="fas fa-pen"></i>
+      </button>
+      <div className="container_forms-elem-details">
+        <p>{per}</p>
+      </div>
     </div>
     )
 
   return (
-    <div className="goals-page">
+    <main className="goals-page">
       <header className="goals_header">
         <Image 
               className="logo-large"
@@ -27,12 +30,13 @@ const GoalsPage = ({cloudName}) => {
         <h1 className="goals_header-title">Your Goals</h1>
       </header>
       <div className="underline"/>
-      <main className="container_forms">
-        {goalsDiv('Workouts Goals')}
-        {goalsDiv('Calories Goals')}
-        {goalsDiv('Protein Goals')}
-      </main>
-    </div>
+      <section className="container_forms">
+        {goalsDiv('Workouts Goals', '5/week')}
+        {goalsDiv('Calories Goals', '2100/day')}
+        {goalsDiv('Weight Goals', '0,5kg/week')}
+        {goalsDiv('Protein Goals', '110g/day')}
+      </section>
+    </main>
   )
 }
 

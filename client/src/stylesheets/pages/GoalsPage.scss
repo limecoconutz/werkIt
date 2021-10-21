@@ -2,11 +2,11 @@
 @import '../_fonts.scss';
 
 .goals-page{
-  max-width: 100vw;
+  width: 100vw;
 }
 
 .goals_header {
-  max-width: 70vw;
+  max-width: 80vw;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -20,11 +20,59 @@
 }
 
 .underline {
+  margin: 12px auto;
   margin-top: 12px;
   margin-bottom: 12px;
   opacity: 0.6;
-  max-width: 80vw;
+  max-width: 90vw;
   height: 4px;
   border-radius: 5px;
   background-color: $sky-blue-crayola;
+}
+
+.container_forms {
+  margin: 18px;
+  padding: 12px;
+  &-elem{
+    display: flex;
+    justify-content: space-around;
+    min-width: 90vw;
+    padding: 12px;
+    &-title{
+      word-wrap: break-word;
+      max-width: 50%;
+      font-size: 1.3rem;
+    }
+    &-btn{
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      margin: 12px;
+      background-color: $violet-blue;
+      color: $honeydew;
+      border: none;
+      &:hover{
+        transition: 200ms;
+        background-color: $polished-pine;
+        box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+          6px 6px 10px rgba(0, 0, 0, 0.2);
+      }
+    }
+    &-details{
+      display: flex;
+      justify-content: center;
+      background-color: $sky-blue-crayola;
+      min-width: 150px;
+      height: 40px;
+      border-radius: 10px;
+      box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+      inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+      p{
+        font-family: $sans;
+        align-self: center;
+        margin: 0 auto 0 auto;
+        padding: 0;
+      }
+    }
+  }
 }

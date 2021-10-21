@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { auth } from '../service/firebase';
 
 import '../stylesheets/App.scss';
-import ModalStart from './ModalStart';
+import ModalStart from '../components/ModalStart';
 
 const LandingPage = ({ user, cloudName }) => {
   const [modal, setModal] = useState(false);
@@ -10,7 +10,7 @@ const LandingPage = ({ user, cloudName }) => {
 
   console.log(user);
   return (
-    <div className="landing">
+    <main className="landing">
 
       <h1>Hello, <span></span>{user.displayName}</h1>
       <img src={user.photoURL} alt="" />
@@ -19,7 +19,7 @@ const LandingPage = ({ user, cloudName }) => {
         Get started
       </button>
       <ModalStart show={modal} username={user.displayName} close={toggleModal}/>
-    </div>
+    </main>
   )
 }
 

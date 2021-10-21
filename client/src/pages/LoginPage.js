@@ -11,7 +11,7 @@ const LoginPage = ({cloudName}) => {
   // const passwordConfirmRef = useRef();
 
   return (
-    <div>
+    <main>
       <header className="header-login">
       <Image 
             className="logo-large"
@@ -70,7 +70,7 @@ const LoginPage = ({cloudName}) => {
           <Transformation width='30' height='30' crop="fit"/>
         </Image>
         <p style={{paddingLeft: '12px'}}>Sign in with Google</p></button>
-        </div>
+        </main>
         // </div>
   )
 }

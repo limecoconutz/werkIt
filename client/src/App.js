@@ -1,13 +1,17 @@
 import { useState, useEffect } from 'react';
 import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
-import LoginPage from "./components/LoginPage";
-import LandingPage from './components/LandingPage';
-import GoalsPage from './components/GoalsPage';
+import LoginPage from "./pages/LoginPage";
+import LandingPage from './pages/LandingPage';
+import GoalsPage from './pages/GoalsPage';
+import SettingsPage from './pages/SettingsPage';
+import TodayPage from './pages/TodayPage';
+import TrendsPage from './pages/TrendsPage';
+import Footer from './components/Footer';
 import firebase from './service/firebase';
 import { AuthProvider } from './contexts/AuthContext';
 import './stylesheets/App.scss';
 import { Container } from 'react-bootstrap';
-import LoginPageBootstrap from './components/LoginPageBootstrap';
+import LoginPageBootstrap from './pages/LoginPageBootstrap';
 
 const cloudName = process.env.REACT_APP_CLOUDINARY_CLOUDNAME;
 
@@ -34,6 +38,10 @@ function App() {
             <>
              <Route path="/" exact component={()=> <LandingPage user={user} cloudName={cloudName}/>}/>
              <Route path="/goals" exact component={() => <GoalsPage cloudName={cloudName}/>}/>
+             <Route path="/trends" exact component={() => <TrendsPage cloudName={cloudName}/>}/>
+             <Route path="/today" exact component={() => <TodayPage cloudName={cloudName}/>}/>
+             <Route path="/settings" exact component={() => <SettingsPage cloudName={cloudName}/>}/>
+             <Footer />
             </>
             :<Route path="/" exact component={() => <LoginPage cloudName={cloudName}/>}/>          
           }

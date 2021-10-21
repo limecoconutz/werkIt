@@ -1,0 +1,41 @@
+@import "../colors";
+@import "../fonts";
+
+.footer_list{
+  width: 100vw;
+  color: $honeydew;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: solid 1px $honeydew;
+  a{
+    text-decoration: none;
+    color: $honeydew;
+  }
+  &-elem{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 6px 0 6px;
+    max-width: 20%;
+    h4{
+      font-size: 0.8rem;
+      text-align: center;
+      word-break: break-all;
+    }
+    &-icon{
+      font-size: 1.5rem;
+      padding: 8px;
+      text-align: center;
+    }
+  }
+  &-elem:not(:first-child) {
+    border-left: 1px solid $honeydew;
+  }
+}
+
+.active{
+  text-decoration: underline;
+}

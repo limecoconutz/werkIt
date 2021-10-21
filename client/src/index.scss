@@ -5,13 +5,12 @@ body {
   margin: 0;
   max-width: 100vw;
   font-family: $sans;
+  background-color: $polished-pine !important;
   // background-color: $honeydew;
   // background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
-  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
-  background-blend-mode: screen;
+
   // background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-  background-repeat: no-repeat;
-  background-position: center;
+
   height: 100vh;
   color: $rich-black-fogra-29;
 }
